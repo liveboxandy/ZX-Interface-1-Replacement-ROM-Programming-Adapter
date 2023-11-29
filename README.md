@@ -57,3 +57,5 @@ You should now have two ROMs programmed and can be selected by the switch.
 
 
 If using 16K ROM images, connect A13 on the unused connector to address A13 on the Interface 1. This can be found on the Spectrum Edge Connector. See picture for details. 
+
+Comments - Good Bad or indifferent on https://www.facebook.com/groups/zxspa/

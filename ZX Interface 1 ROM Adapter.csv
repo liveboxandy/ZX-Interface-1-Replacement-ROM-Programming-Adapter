@@ -1,0 +1,12 @@
+"Source:","W:\Emulators\Spectrum Repair\ZX Interface 1 ROM Adapter\ZX Interface 1 ROM Adapter.kicad_sch"
+"Date:","29/11/2023 16:07:05"
+"Tool:","Eeschema 7.0.8"
+"Generator:","C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","4"
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP","Height","Manufacturer_Name","Manufacturer_Part_Number","Mouser Part Number","Mouser Price/Stock"
+"1","1","J1","Conn_01x09_Socket","Connector:Conn_01x09_Socket","Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical","~","","","","","",""
+"2","1","J2","24DIL Socket","DIL24:DILB24P-224TLF","Package_DIP:DIP-24_W15.24mm_Socket_LongPads","https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10052485.pdf","","5.25","Amphenol Communications Solutions","DILB24P-224TLF","649-DILB24P-224TLF","https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/DILB24P-224TLF?qs=cTNRJjk9LRekdjb2T7GbOg%3D%3D"
+"3","2","J3, J4","Conn_01x16","Connector_Generic:Conn_01x16","Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical","~","","","","","",""

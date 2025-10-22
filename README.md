@@ -3,7 +3,7 @@ Programming adapter for the ZX Interface 1 Replacement ROM.
 
 This is the programming adapter that is required to allow reprogramming of the ZX Interface 1 Replacement ROM.
 
-You need to link J1 Pins 1-8 on the adapter PCB to J1 Pins 1-8 on the ROM PCB and select the correct SST39SF device on the programmer. See the ROM folder for more information on layout of the ROM and where to place the ROM images.
+You need to link J1 Pins 1-8 on the adapter PCB to J1 Pins 1-8 (1-1,2-2,3-3,4-4,5-5,6-6,7-7,8-8) on the ROM PCB and select the correct SST39SF device on the programmer. See the ROM folder for more information on layout of the ROM and where to place the ROM images.
 
 
 It can also be used to reprogram the Retroleum 24-pin switchable ROM replacement module with a bit of faffing about. See the relevant picture in the pictures folder for connection details.
@@ -17,16 +17,16 @@ and is configured in the following manner,
 
 A12 - connected to 24 Pin Socket Pin 21 and is left unconnected.
 
-~WE pulled Hi by 10K resistor in normal operation. Can be overidden by programmer. Connect to J1 pin 1 to program.
+~WE pulled Hi by 10K resistor in normal operation. Can be overidden by programmer. Connect to Adapter J1 pin 1 to program.
 
-A14 pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to J1 Pin 6 to program.
+A14 pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to Adapter J1 Pin 6 to program.
 
-A13 pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to J1 Pin 7 to program. This can be used in the Interface 1 to allow the use of 16K ROM images. 
+A13 pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to Adapter J1 Pin 7 to program. This can be used in the Interface 1 to allow the use of 16K ROM images. 
 
-~CE pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to J1 Pin 8 to program.
+~CE pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to Adapter J1 Pin 8 to program.
 
 
-A15 selects ROM to use by the switch, pulls line Hi via 10K to 5V or Lo via short to Gnd. Manually switched when programming.
+A15 selects ROM to use by the switch, pulls line Hi via 10K to 5V or Lo via short to Gnd. Can be manually switched when programming to allow different ROMs to be selected (8K images unless A13 will be connected in the IF1 when 16K images can be used).
 
 A16 permanently connected to Ground. Cannot be overridden by programmer.
 
@@ -37,7 +37,7 @@ To program,
 
 2 - Add wires for ~WE, A14, A13 and ~CE. See picture for details.
 
-3 - Device ID 'should' work but programmer should complain with a Pin 2 connection error. Turn OFF Pin Detect.
+3 - Device ID 'should' work but programmer should complain with a Pin 2 connection error if Pin Detect is ON. Now turn OFF Pin Detect.
 
 4 - Erase EEPROM.
 

@@ -123,7 +123,7 @@
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads")
 		(property "Reference" "J2"
-			(at 7.62 -2.33 0)
+			(at 5.5594 -3.508375 0)
 			(layer "F.SilkS")
 			(uuid "0d530552-08f5-4913-af13-29e5a3a16736")
 			(effects
@@ -759,7 +759,7 @@
 		(descr "Through hole angled socket strip, 1x08, 2.54mm pitch, 8.51mm socket length, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole angled socket strip THT 1x08 2.54mm single row")
 		(property "Reference" "J1"
-			(at -8.98525 -3.324225 0)
+			(at -7.877175 -4.168775 0)
 			(layer "F.SilkS")
 			(uuid "f2750855-9557-414d-addf-490638168c16")
 			(effects
@@ -1640,7 +1640,7 @@
 			(uuid "9e00e055-4c3e-4bc0-94fa-28595edb9960")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -9.540875 22.240875 0)
+			(at -8.042275 22.52345 0)
 			(layer "F.Fab")
 			(uuid "52ff5fcf-1b36-4283-92d7-df5a409334dd")
 			(effects

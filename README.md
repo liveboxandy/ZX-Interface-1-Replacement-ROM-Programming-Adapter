@@ -3,7 +3,7 @@ Programming adapter for the ZX Interface 1 Replacement ROM.
 
 This is the programming adapter that is required to allow reprogramming of the ZX Interface 1 Replacement ROM.
 
-You need to link J1 Pins 1-8 on the adapter PCB to J1 Pins 1-8 (1-1,2-2,3-3,4-4,5-5,6-6,7-7,8-8) on the ROM PCB and select the correct SST39SF device on the programmer. See the ROM folder for more information on layout of the ROM and where to place the ROM images.
+You need to link J1 Pins 1-8 on the adapter PCB to J1 Pins 1-8 (1-1,2-2,3-3,4-4,5-5,6-6,7-7,8-8) on the ROM PCB and select the correct SST39SF device on the programmer. You do not need to connect the 9th pin on the replacement ROM. See the ROM folder for more information on layout of the ROM and where to place the ROM images.
 
 
 It can also be used to reprogram the Retroleum 24-pin switchable ROM replacement module with a bit of faffing about. See the relevant picture in the pictures folder for connection details.
@@ -25,11 +25,9 @@ A13 pulled Lo by 10K resistor in normal operation. Can be overidden by programme
 
 ~CE pulled Lo by 10K resistor in normal operation. Can be overidden by programmer. Connect to Adapter J1 Pin 8 to program.
 
-
 A15 selects ROM to use by the switch, pulls line Hi via 10K to 5V or Lo via short to Gnd. Can be manually switched when programming to allow different ROMs to be selected (8K images unless A13 will be connected in the IF1 when 16K images can be used).
 
 A16 permanently connected to Ground. Cannot be overridden by programmer.
-
 
 To program,
 
@@ -54,7 +52,6 @@ To program,
 10 - Program - Ensure that Erase before Programming is NOT selected.
 
 You should now have two ROMs programmed and can be selected by the switch. 
-
 
 If using 16K ROM images, connect A13 on the unused connector to address A13 on the Interface 1. This can be found on the Spectrum Edge Connector. See picture for details. 
 
